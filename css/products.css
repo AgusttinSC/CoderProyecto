@@ -49,6 +49,13 @@ nav ul li {
     margin-right: 30px;
     text-decoration: none;
     color: black;
+    transition: 0.5;
+    
+}
+
+nav ul li:hover {
+    font-size: 1.2em;
+
 }
 
 nav ul a {
