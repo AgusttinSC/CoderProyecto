@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*GRID*/
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    width: 90%;
+    max-width: 1100px;
+    height: 100%;
+    margin: 0 auto;
+    gap: 10px;
+    overflow: hidden;
+    align-items: center;
+}
+
+/*NAV*/
+
+nav {
+    background-color: #f3e9dc;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+ 
+.logo-img{
+    width: 150px;
+    height: auto;
+
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    text-decoration: none;
+}
+
+nav ul li {
+    margin-right: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+nav ul a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+/*HEADER*/
+
+.header {
+    background-color: #c08552;
+    height: 500px;
+}
+
+.img-header {
+    width: 100%;
+    height: auto;
+    grid-column: 7/13;
+}
+
+/*FOOTER*/
+
+#footer {
+    background-color: blanchedalmond;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+.red-conteiner {
+    display: flex;
+    align-items: center;
+}
+
+.red-conteiner img {
+    width: 40px;
+    height: auto;
+    margin:0 20px;
+}
+
+/*IMG - HEADER*/
+
+.div-header {
+    width: 100%;
+    height: auto;
+    grid-column: 1/13;
+}
+
+.img {
+    width: 95%;
+    max-width: 400px;
+}
+
+/*MAIN - NOVEDADES*/
+
+main {
+    background-color: #895737;
+}
+
+.novedades {
+    height: 450px;
+}
+
+.items {
+    grid-column: 1/-1;
+    display: flex;
+    width: 100%;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.item {
+    width: 30%;
+    text-align: center;
+}
+
+.title-h3 {
+    margin: 10px 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fff;
+}
+
+/*FOOTER*/
+
+.footer {
+    background-color: #dab49d;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.texto-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.redes .red-img {
+    width: 50px;
+    height: auto;
+    margin-right: 20px;
+}
+
+/*MEDIA 600*/
+
+@media screen and (max-width: 600px) {
+
+        /*NAV*/
+
+        .nav {
+            display: flex;
+            width: 100%;
+            padding: 20px;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+        }
+
+
+    
+        .logo-img {
+            width: 100px;
+        }
+
+        /*HEADER*/
+
+        .header {
+            height: 300px;
+        }
+
+        /*MAIN*/
+        
+        .grid {
+            grid-template-columns: 1fr;
+        }
+
+        .novedades {
+            height: auto;
+        }
+
+        .items {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .item {
+            width: 100%;
+        }
+    
+}
+
+
+    
+
+/*MEDIA 480*/
+
+@media screen and (max-width: 480px) {
+
+    /*NAV*/
+
+    .nav {
+        display: flex;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-content: center;
+        text-align: center;
+    }
+
+    .nav ul li {
+        font-size: 0.8em;
+    }
+    
+    .logo-img {
+        text-align: center;
+        width: 100px;
+        display: block;
+    }
+
+    .texto-footer {
+        display: block;
+    }
+
+    /*HEADER*/
+
+    .header {
+        height: 200px;
+    }
+
+    /*MAIN*/
+
+    .novedades {
+
+        height: auto;
+    }
+
+    .novedades .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+
+    .items {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .item {
+        width: 100%;
+    }
+
+    /*FOOTER*/
+
+    .footer {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .texto-footer {
+        text-align: center;
+        font-size: 0.8em;
+    }
+
+    .redes {
+        display: block;
+        margin-top: 20px;
+        text-align: center;
+    }
+        
+    }
+
+    /*MEDIA -480*/
+
+    @media screen and (max-width: 200px){
+
+        .nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo-img {
+            width: 70px;
+        }
+
+        .redes {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .red-img {
+            width: 25px;
+        }
+
+        .novedades {
+            width: 100%;
+        }
+    }
